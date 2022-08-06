@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:project_demo/loginpages/login_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -32,6 +33,7 @@ class _LoginPageState extends State<LoginPage> {
             Text(
               "Welcome to\nRegistration Page",
               style: TextStyle(
+                  fontFamily: "fonts1",
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.orange),
@@ -41,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             Text(
               "Please write the correct information",
-              style: TextStyle(color: Colors.blue),
+              style: TextStyle(color: Colors.blue, fontFamily: "fonts1"),
             ),
             SizedBox(
               height: 20,
@@ -64,7 +66,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 20,
             ),
             Center(
               child: TextFormField(
@@ -78,8 +80,9 @@ class _LoginPageState extends State<LoginPage> {
                       child: Icon(
                         Icons.lock,
                         color: Colors.white,
-                        size: 25,
+                        size: 30,
                       )),
+                  suffixIcon: Icon(Icons.visibility),
                   hintText: "Password",
                   hintStyle: TextStyle(color: Colors.blue),
                 ),
@@ -89,19 +92,36 @@ class _LoginPageState extends State<LoginPage> {
               height: 10,
             ),
             Center(
-                child:
-                    ElevatedButton(onPressed: () {}, child: Text("Continue"))),
+                child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SigninPage()));
+                    },
+                    child: Text("Continue"))),
             SizedBox(
               height: 10,
             ),
             Row(
               children: [
-                Text("Already Have an Account?"),
+                Text(
+                  "Already Have an Account?",
+                  style: TextStyle(fontFamily: "fonts1", fontSize: 16),
+                ),
                 InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: ((context) {
+                        return SigninPage();
+                      })));
+                    },
                     child: Text(
                       "Login",
-                      style: TextStyle(color: Colors.red),
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.red),
                     ))
               ],
             )

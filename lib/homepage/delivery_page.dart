@@ -36,6 +36,7 @@ class _Page2State extends State<Page2> {
                   style: TextStyle(
                       color: Colors.black,
                       fontSize: 30,
+                      fontFamily: "fonts1",
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
@@ -43,6 +44,7 @@ class _Page2State extends State<Page2> {
                 ),
                 Text(
                   "Very fast same day delivery and\ncustom delivery system",
+                  style: TextStyle(fontFamily: "fonts1", fontSize: 16),
                   textAlign: TextAlign.center,
                 )
               ],

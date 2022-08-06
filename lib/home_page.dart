@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:project_demo/homepage/page1.dart';
-import 'package:project_demo/homepage/page2.dart';
-import 'package:project_demo/homepage/page3.dart';
-import 'package:project_demo/login_page.dart';
+import 'package:project_demo/homepage/welcome_page.dart';
+import 'package:project_demo/homepage/delivery_page.dart';
+import 'package:project_demo/homepage/fast_delivery.dart';
+import 'package:project_demo/reg_page.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HomePage extends StatefulWidget {

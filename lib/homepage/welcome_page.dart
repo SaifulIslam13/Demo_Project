@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class Screen3 extends StatefulWidget {
-  const Screen3({Key? key}) : super(key: key);
+class Page1 extends StatefulWidget {
+  const Page1({Key? key}) : super(key: key);
 
   @override
-  State<Screen3> createState() => _Screen3State();
+  State<Page1> createState() => _Page1State();
 }
 
-class _Screen3State extends State<Screen3> {
+class _Page1State extends State<Page1> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -21,29 +21,31 @@ class _Screen3State extends State<Screen3> {
             child: Column(
               children: [
                 Container(
-                    height: 400,
+                    height: 450,
                     width: double.infinity,
                     child: Image(
-                      image: AssetImage('images/image3.jpg'),
+                      image: AssetImage('images/image1.jpg'),
                       fit: BoxFit.cover,
                     )),
                 SizedBox(
-                  height: 50,
+                  height: 30,
                 ),
                 Text(
-                  "Fast Delivery",
+                  "Welcome\nto\nGroceryus",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Colors.black,
                       fontSize: 30,
-                      fontWeight: FontWeight.bold),
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "fonts1"),
                 ),
                 SizedBox(
                   height: 20,
                 ),
                 Text(
-                  "Very fast same day delivery and\ncustom delivery system",
+                  "15000+ groceryus items available\nonly for you.",
                   textAlign: TextAlign.center,
+                  style: TextStyle(fontFamily: "fonts1", fontSize: 16),
                 )
               ],
             ),

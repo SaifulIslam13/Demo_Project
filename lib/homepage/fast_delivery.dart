@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class Page1 extends StatefulWidget {
-  const Page1({Key? key}) : super(key: key);
+class Screen3 extends StatefulWidget {
+  const Screen3({Key? key}) : super(key: key);
 
   @override
-  State<Page1> createState() => _Page1State();
+  State<Screen3> createState() => _Screen3State();
 }
 
-class _Page1State extends State<Page1> {
+class _Screen3State extends State<Screen3> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -21,29 +21,31 @@ class _Page1State extends State<Page1> {
             child: Column(
               children: [
                 Container(
-                    height: 450,
+                    height: 400,
                     width: double.infinity,
                     child: Image(
-                      image: AssetImage('images/image1.jpg'),
+                      image: AssetImage('images/image3.jpg'),
                       fit: BoxFit.cover,
                     )),
                 SizedBox(
                   height: 50,
                 ),
                 Text(
-                  "Welcome\nto\nGroceryus",
+                  "Fast Delivery",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Colors.black,
+                      fontFamily: "fonts1",
                       fontSize: 30,
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 Text(
-                  "15000+ groceryus items available\nonly for you.",
+                  "Very fast same day delivery and\ncustom delivery system",
                   textAlign: TextAlign.center,
+                  style: TextStyle(fontFamily: "fonts1", fontSize: 16),
                 )
               ],
             ),
