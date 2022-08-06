@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:project_demo/reg_page.dart';
+import 'package:project_demo/splash/splash_page.dart';
+import 'package:project_demo/verification_pages/phone_page.dart';
 
 class SigninPage extends StatelessWidget {
   const SigninPage({Key? key}) : super(key: key);
@@ -99,7 +101,13 @@ class SigninPage extends StatelessWidget {
                     ),
                     Center(
                         child: ElevatedButton(
-                            onPressed: () {}, child: Text("Sign In"))),
+                            onPressed: () {
+                              Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) {
+                                return SplashPage();
+                              }));
+                            },
+                            child: Text("Sign In"))),
                     SizedBox(
                       height: 20,
                     ),

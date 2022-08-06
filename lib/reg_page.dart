@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:project_demo/loginpages/login_page.dart';
+import 'package:project_demo/verification_pages/phone_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -97,7 +98,7 @@ class _LoginPageState extends State<LoginPage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => SigninPage()));
+                              builder: (context) => PhoneVerify()));
                     },
                     child: Text("Continue"))),
             SizedBox(
