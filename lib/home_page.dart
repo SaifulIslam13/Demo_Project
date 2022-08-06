@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:project_demo/homepage/welcome_page.dart';
 import 'package:project_demo/homepage/delivery_page.dart';
 import 'package:project_demo/homepage/fast_delivery.dart';
+import 'package:project_demo/loginpages/login_page.dart';
 import 'package:project_demo/reg_page.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -41,7 +42,7 @@ class _HomePageState extends State<HomePage> {
                     onTap: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
-                        return LoginPage();
+                        return SigninPage();
                       }));
                     },
                     child: Text("Skip")),
